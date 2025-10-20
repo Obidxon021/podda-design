@@ -1,0 +1,231 @@
+.home_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    background-color: var(--main-bg);
+    height: 500vh;
+    margin-top: 100px;
+    padding: 0px 30px;
+    /* position: relative; */
+}
+
+
+.first_banner{
+    background: var(--box-bg);
+    height: 250px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--headline-text-color);
+}
+
+.first_banner > section * {
+    padding-top: 5px;
+}
+
+.first_banner section p{
+    color: var(--tagline-color);
+    width: 80%;
+}
+
+.input_items{
+    display: flex;
+    justify-content: space-between;
+    background-color: #422b6f;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.input_items input{
+    width: 80%;
+    background-color: #422b6f;
+    outline: none;
+    border: none;
+    color: var(--headline-text-color);
+    text-indent: 20px;
+    border-radius: 20px;
+}
+
+.input_items > section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+.input_items > section > button{
+    width: 100px;
+    height: 28px;
+    background: var(--box-bg);
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.input_items > section > svg{
+    background-color: #533c7f;
+    padding: 5px;
+    border-radius: 10px;
+    width: 30px;
+    cursor: pointer;
+    height: 28px;
+}
+
+.second_banner{
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: var(--sidebar-bg);
+    padding: 20px 20px;
+}
+
+.profile_section{
+    display: flex;
+    justify-content: space-between;
+}
+.profile_section > article{
+    display: flex;
+    align-items: center;
+}
+.profile_section article > img{
+    object-fit: contain;
+}
+.profile_section > article > div{
+    margin-left: 10px;
+}
+.profile_section > article h4{
+    color: var(--headline-text-color);
+}
+.profile_section article p{
+    color: var(--tagline-color);
+    font-size: 12px;
+}
+.profile_section article svg{
+    color: var(--headline-text-color);
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.img_section img{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.icons_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.icons_wrapper{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: var(--button-bg);
+    gap: 10px;
+}
+.icons_wrapper article{
+    cursor: pointer;
+}
+.icons_wrapper article:last-child{
+    margin-left: 10px;
+    display: flex;
+    border: 1px solid var(--button-bg);
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: yellow;
+}
+.icons_wrapper article:last-child > p{
+    font-size: 17px;
+    margin-left: 7px;
+    color: var(--button-bg);
+}
+.views_wrapper article{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    color: var(--button-bg);
+}
+.views_wrapper article p{
+    font-size: 16px;
+}
+
+.likes_section{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--headline-text-color);
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+.likes_section section > img{
+    width: 20px;
+    object-fit: cover;
+}
+.likes_section section:first-child img:nth-child(1){
+    margin-right: -7px;
+}
+.likes_section section:first-child img:nth-child(2){
+    margin-right: -7px;
+}
+
+.desc_section{
+    /* margin: 10px 0; */
+    margin-top: 15px;
+}
+.desc_section p{
+    font-size: 12px;
+    color: var(--tagline-color);
+    width: 600px;
+}
+
+.post_section{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    gap: 10px;
+}
+.post_section div img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+.post_section div:last-child{
+    background-color: var(--main-bg);
+    height: 45px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.post_section input{
+    width: 100%;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    text-indent: 10px;
+    color: var(--tagline-color);
+    /* width: 80%; */
+}
+.post_section div:last-child > article{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.right_banner {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+    /* height: fit-content; */
+}
