@@ -6,16 +6,21 @@ export default function Button({
     width="auto",
     height="auto",
     fontSize="auto",
-    color="auto"
+    border,
+    background="#7239CE",
+    color="auto",
+    fontWeight
 }) {
     const styles = {
         width,
         height,
         fontSize,
-        background: "#7239CE",
+        background,
         cursor: "pointer",
-        color: "var(--headline-text-color)",
-        borderRadius: "8px"
+        color,
+        borderRadius: "8px",
+        border,
+        fontWeight
     };
 
     return (

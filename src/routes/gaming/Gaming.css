@@ -1,0 +1,149 @@
+.gaming_wrapper {
+    background-color: var(--main-bg);
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    margin-top: 100px;
+    padding: 0 30px;
+}
+
+.gaming_right_banner{
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+.gaming_first_banner > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+}
+.gaming_first_banner > section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    padding-top: 110px;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.443);
+}
+.gaming_first_banner > section > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--headline-text-color);
+}
+.gaming_first_banner > section > p{
+    width: 600px;
+    margin-top: 7px;
+    color: var(--tagline-color);
+}
+
+.gaming_second_banner{
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;   
+}
+.gaming_second_banner article{
+    padding: 20px 0;
+}
+
+.party_mood_wrapper{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--sidebar-bg);
+}
+.party_mood_wrapper > h2{
+    color: var(--headline-text-color);
+}
+.party_mood_wrapper > p{
+    font-size: 12px;
+    color: var(--tagline-color);
+    margin-top: 10px;
+}
+.party_btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.character_wrapper{
+    padding: 20px 20px ;
+    margin-top: 20px;
+    height: 400px;
+    background-color: var(--sidebar-bg);
+    border-radius: 20px;
+}
+.character_wrapper > h2{
+    color: var(--headline-text-color);
+}
+.main_img{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.main_img > img{
+    width: 150px;
+
+}
+.icons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.icons > img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.active_title{
+    position: fixed;
+    pointer-events: none;
+    white-space: nowrap;
+    color: var(--headline-text-color);
+    padding: 6px 15px;
+    margin: 0 15px;
+    font-size: 14px;
+    background-color: var(--main-bg);
+    border-radius: 5px;
+}
+
+.nickname_wrapper{
+    background-color: var(--sidebar-bg);
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.nickname_input_wrapper{
+    margin: 0 20px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-bg);
+    border-radius: 10px;
+}
+
+.nickname_input_wrapper input{
+    width: 100%;
+    height: 45px;
+    background-color: var(--main-bg);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-indent: 10px;
+    color: var(--tagline-color);
+}
+
+.nickname_input_wrapper > div{
+    margin-right: 10px;
+}
