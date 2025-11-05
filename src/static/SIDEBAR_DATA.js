@@ -16,6 +16,13 @@ import { MdInsertChart } from "react-icons/md";
 import { FaDiceD20 } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import { PiBoneFill } from "react-icons/pi";
+import profileImg from '../images/profile.png'
+import profileImg2 from '../images/Rectangle 6369.png'
+import profileImg3 from '../images/Rectangle 6370.png'
+import profileImg4 from '../images/Rectangle 6371.png'
+import { TbMedal2 } from "react-icons/tb";
+import { TfiMedallAlt } from "react-icons/tfi";
+import { PiMedalMilitaryBold } from "react-icons/pi"
 
 export const SIDEBAR_DATA = [
     {
@@ -73,5 +80,86 @@ export const SIDEBAR_DATA = [
         icon: <PiBoneFill />,
         route: '/pet-house',
         component: <PetHouse/>,
+    },
+]
+
+export const GAMER_LEADERBOARD = [
+    {
+        img: profileImg,
+        name: "Dzika",
+        srore: 1430,
+        icon: <TbMedal2/>
+    },
+    {
+        img: profileImg2,
+        name: "NoobPlayer",
+        srore: 1417,
+        icon: <TfiMedallAlt/>
+    },
+    {
+        img: profileImg3,
+        name: "Mrs Jam",
+        srore: 1390,
+        icon: <PiMedalMilitaryBold/>
+    },
+    {
+        img: profileImg4,
+        name: "KillerX",
+        srore: 1372,
+        icon: 4
+    },
+    {
+        img: profileImg,
+        name: "Dzika",
+        srore: 1430,
+        icon: 5
+    },
+    {
+        img: profileImg2,
+        name: "NoobPlayer",
+        srore: 1417,
+        icon: 6
+    },
+    {
+        img: profileImg3,
+        name: "Mrs Jam",
+        srore: 1390,
+        icon: 7
+    },
+    {
+        img: profileImg4,
+        name: "KillerX",
+        srore: 1372,
+        icon: 8
+    },
+    {
+        img: profileImg,
+        name: "Dzika",
+        srore: 1430,
+        icon: 9
+    },
+    {
+        img: profileImg2,
+        name: "NoobPlayer",
+        srore: 1417,
+        icon: 10
+    },
+    {
+        img: profileImg3,
+        name: "Mrs Jam",
+        srore: 1390,
+        icon: 11
+    },
+    {
+        img: profileImg4,
+        name: "KillerX",
+        srore: 1372,
+        icon: 12
+    },
+    {
+        img: profileImg,
+        name: "Mrs Jam",
+        srore: 1113,
+        icon: 13
     },
 ]

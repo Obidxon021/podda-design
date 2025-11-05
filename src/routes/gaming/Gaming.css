@@ -119,8 +119,9 @@
 
 .nickname_wrapper{
     background-color: var(--sidebar-bg);
-    margin: 20px 0;
+    margin-top: 20px;
     border-radius: 20px;
+    height: 593px;
 }
 
 .nickname_input_wrapper{
@@ -146,4 +147,90 @@
 
 .nickname_input_wrapper > div{
     margin-right: 10px;
+}
+
+.space_wrapper{
+    padding: 20px;
+    /* width: 100%; */
+    position: relative;
+}
+.space_wrapper img{
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.space_wrapper article{
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+}
+.space_wrapper h2{
+    color: var(--headline-text-color);
+}
+.space_wrapper p{
+    color: var(--tagline-color);
+}
+
+.gaming_left_banner{
+    height: auto;
+    padding: 20px;
+    background-color: var(--sidebar-bg);
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.gaming_left_banner article > section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gaming_left_banner article >  section > h4{
+    color: var(--headline-text-color);
+}
+.gaming_left_banner article > section > p{
+    color: var(--tagline-color);
+    cursor: pointer;
+}
+.gaming_left_banner article > div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+.profile_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.gaming_one_profile{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.gaming_one_profile h4,
+.gaming_one_profile span    {
+    color: var(--headline-text-color);
+    font-weight: 200;
+}
+.gaming_one_profile span{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.gaming_one_profile img{
+    object-fit: cover;
+}
+.gamer_medal{
+    color: var(--tagline-color);
+    margin-right: 14px;
+}
+.gamer_medal > svg{
+    color: gold;
+    font-size: 22px;
+    /* margin-right: 10px; */
 }

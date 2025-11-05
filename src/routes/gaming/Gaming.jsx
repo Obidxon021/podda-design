@@ -8,6 +8,9 @@ import charcter1 from '../../images/character1.png'
 import charcter2 from '../../images/character2.png'
 import charcter3 from '../../images/character3.png'
 import charcter4 from '../../images/character4.png'
+import banner from '../../images/Mask group (1).png'
+import medal from '../../images/3.png'
+import { GAMER_LEADERBOARD } from '../../static/SIDEBAR_DATA'
 
 function Gaming() {
 
@@ -85,7 +88,14 @@ function Gaming() {
           <article className='nickname_wrapper'>
             <div className="nickname_input_wrapper">
               <input type="text" placeholder='Nickname' />
-              <div><Button children="Play" width='80px' height='30px' color='#fff'/></div>
+              <div><Button children="Play" width='80px' height='30px' color='#fff' /></div>
+            </div>
+            <div className='space_wrapper'>
+              <img src={banner} alt="" />
+              <article>
+                <h1>Space Game Mode</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, possimus praesentium aliquam temporibus blanditiis error corporis ducimus? Laboriosam, vero commodi!</p>
+              </article>
             </div>
           </article>
         </div>
@@ -93,7 +103,26 @@ function Gaming() {
       </div>
 
       <div className="gaming_left_banner">
-        sdfvb
+        <article>
+          <section><h4>Gamer Leaderboard</h4> <p>See All</p> </section>
+          <div>
+            {
+              GAMER_LEADERBOARD.map((i, k) => <div className='profile_wrapper'>
+                <div className='gaming_one_profile'>
+                  <img src={i.img} alt="" />
+                  <div>
+                    <h4>{i.name}</h4>
+                    <span> <img src={medal} alt="" /> {i.srore} </span>
+                  </div>
+                </div>
+                <div className='gamer_medal'>
+                  {i.icon}
+                </div>
+
+              </div>)
+            }
+          </div>
+        </article>
       </div>
 
     </div>

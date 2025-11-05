@@ -8,7 +8,7 @@ export default function Button({
     fontSize="auto",
     border,
     background="#7239CE",
-    color="auto",
+    color="#fff",
     fontWeight
 }) {
     const styles = {
