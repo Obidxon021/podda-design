@@ -12,12 +12,10 @@ function App() {
   const { pathname } = useLocation()
 
   return (
-    <div className='app'>
-      <div className="sidebar">
-        {pathname !== '/login' ? <Sidebar /> : []}
-      </div>
+    <div className={pathname === '/login' ? 'app login_page' : 'app'}>
+      {pathname !== '/login' && <div className='sidebar'> <Sidebar /> </div>}
       <div className="routes_wrapper">
-        <div className="navbar"> <Navbar/> </div>
+        {pathname !== '/login' ? <div className="navbar"> <Navbar /> </div> : null}
         <Routes>
           {SIDEBAR_DATA.map((i) => (
             <Route

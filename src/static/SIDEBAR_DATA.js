@@ -23,6 +23,7 @@ import profileImg4 from '../images/Rectangle 6371.png'
 import { TbMedal2 } from "react-icons/tb";
 import { TfiMedallAlt } from "react-icons/tfi";
 import { PiMedalMilitaryBold } from "react-icons/pi"
+import Login from '../routes/login/Login'
 
 export const SIDEBAR_DATA = [
     {
@@ -81,6 +82,13 @@ export const SIDEBAR_DATA = [
         route: '/pet-house',
         component: <PetHouse/>,
     },
+    {
+        id: 8,
+        title: 'Login',
+        icon: null,
+        route: '/login',
+        component: <Login/>
+    }
 ]
 
 export const GAMER_LEADERBOARD = [

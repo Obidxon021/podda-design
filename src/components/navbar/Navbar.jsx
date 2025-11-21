@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaBell } from "react-icons/fa6";
 import { AiFillMessage } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
+import { NavLink } from 'react-router';
 
 function Navbar() {
 
@@ -53,7 +54,9 @@ function Navbar() {
                     <AiFillMessage />
                 </article>
                 <article>
-                    <FaUser />
+                    <NavLink to="/login">
+                        <FaUser/>
+                    </NavLink>
                 </article>
             </section>
         </div>

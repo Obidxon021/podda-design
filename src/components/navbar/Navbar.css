@@ -101,3 +101,7 @@
     transform: translateY(0);
     pointer-events: auto;
 }
+
+.navbar_icons_wrapper article:last-child > a{
+    color: inherit;
+}

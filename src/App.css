@@ -2,3 +2,6 @@
     display: grid;
     grid-template-columns: 100px 1fr;
 }
+.app.login_page{
+    display: block;
+}

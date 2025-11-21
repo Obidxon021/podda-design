@@ -3,12 +3,19 @@ import './Sidebar.css'
 import { SIDEBAR_DATA } from '../../static/SIDEBAR_DATA'
 import { NavLink } from 'react-router'
 import { RiLogoutBoxRFill } from "react-icons/ri";
+import { useLocation } from 'react-router-dom'
 
 function Sidebar() {
 
   const getNavLinkClass = ({ isActive }) => {
     return isActive ? 'sidebar_link active_link' : 'sidebar_link';
   };
+
+  const location = useLocation()
+
+  if(location.pathname === '/login') {
+    return null
+  }
 
   return (
     <div className='sidebar_wrapper'>
